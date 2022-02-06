@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500px" height="500px" style="border: 1px solid black">
+
+    </canvas>
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let context = canvas.getContext("2d")
+
+        context.beginPath();
+        context.moveTo(0, 0);
+        context.lineTo(500, 500);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(100, 100, 100, 0, 2*Math.PI);
+        context.stroke();
+
+        context.font = "40px Arial";
+        context.fillText("Hello World", 150, 250)
+
+        context.fillStyle = "green";
+        context.fillRect(100, 250, 300, 200)
+
+        context.beginPath();
+        context.moveTo(50, 50)
+        context.lineTo(150,50)
+        context.lineTo(100,200);
+        context.closePath();
+        context.fillStyle = "coral"
+        context.fill();
+    </script>
+</body>
+</html>
