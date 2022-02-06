@@ -19,12 +19,12 @@
     </select>
     <br>
     <br>
-    <button onClick="drawHead()">Head</button>
-    <button onClick="drawEyes()">Eyes</button>
-    <button onClick="drawMouth()">Mouth</button>
+    <button id="head" onClick="drawHead()">Head</button>
+    <button id="eyes" onClick="drawEyes()">Eyes</button>
+    <button id="mouth" onClick="drawMouth()">Mouth</button>
     <br>
     <br>
-    <button onclick="reset()">reset</button>
+    <button id="reset" onclick="reset()">reset</button>
     <script>
         let color = document.getElementById("selectColor").value;
         let canvas = document.getElementById("myCanvas");
